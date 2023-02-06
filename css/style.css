@@ -61,3 +61,27 @@ body {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
+
+.navbar .navbar-extra a {
+  color: white;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-extra a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-extra a:hover::after {
+  transform: scaleX(0.5);
+}
